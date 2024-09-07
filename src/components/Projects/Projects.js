@@ -41,7 +41,7 @@ Our Travel Booking Platform offers an easy way to book travel tickets and arrang
               description="
 Our Dry Fruit Website lets users easily add items to their cart. Built with React, Material UI, and Redux, it redirects users to WhatsApp via the WhatsApp API for sharing order details directly, making the checkout process quick and simple."
               ghLink="https://github.com/Hari-Hara-2005/smartdryfruit"
-              demoLink="https://github.com/Hari-Hara-2005/smartdryfruit"
+              demoLink="https://smartdryfruitdryfruit.vercel.app/"
             />
           </Col>
 
