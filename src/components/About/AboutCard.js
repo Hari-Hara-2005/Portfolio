@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 
 function AboutCard() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
+
   return (
-    <Card className="quote-card-view">
+    <Card
+      className="quote-card-view"
+      data-aos="fade-up" // Add AOS fade-up animation
+      data-aos-duration="1000"
+    >
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
@@ -19,7 +29,7 @@ function AboutCard() {
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
-          <li className="about-activity">
+            <li className="about-activity">
               <ImPointRight /> Editing
             </li>
             <li className="about-activity">
@@ -31,7 +41,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Little by little become a master !"{" "}
+            "Little by little become a master !"
           </p>
           <footer className="blockquote-footer">Hari</footer>
         </blockquote>
